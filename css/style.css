@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
+:root{
+    --white-t:rgb(0, 0, 0) ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth ;
+}
+body{
+    
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(225, 230, 228);
+    margin: 0;
+}
+h1{ font-size: 3em;}
+h2{font-size: 2.5em;}
+h3{font-size: 1.5em;}
+p{font-size: 1em;}
+ul{list-style: none;}
+li{font-size: 1.23em;}
+
+
+button{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 12px;
+    border: 0px  solid rgba(0,0,0,0.8);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.8) ;
+    color: white;
+    background-color:#271ea3 ;
+    float: left;
+
+    
+}
+button:hover{
+    background-color: #134fcf;
+}
+
+marquee{
+    
+    position:relative ;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 25px;
+    color: white;
+    background-color:#50055c  ;
+    float: left;
+}
+.nav{background: #0e050f ;
+    height: 105px;
+    
+    color: white;}
+
+.navcontenedor{
+    display: flex;
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navlogo{
+    width: 1.5em;
+    height: 9;
+     ;
+}
+
+.navmenu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.9em;
+}
+
+.enlaces{
+    text-decoration: none;
+    color: white;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+   
+}
+
+
+.enlaces::after{
+    content: "";
+    display: block;
+    background: rgb(40, 5, 95);
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+
+}
+
+.enlaces:hover{
+    --clippy: polygon(0 0, 100% 1%, 100% 100%, 0 100%);
+}
+
+#checkmenu{
+    display: none;
+}
+
+.checkbtn{
+    cursor: pointer;
+    display: none;
+    opacity: 0;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 12px;
+    border: 0px  solid rgba(0,0,0,0.8);
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.8) ;
+    color: white;
+    background-color:#5e0ff2 ;
+    float: left;
+
+    
+}
+button:hover{
+    background-color: #4a0c91;
+}
+
+
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+  
+    flex-direction: column;
+    height: 100vh;  
+    color:white;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+}
+
+.titulo{
+    color: white;
+    text-shadow: rgb(22, 19, 19) 0.1em  0.1em 0.2em;
+}
+
+#quienesomos .contenedor2{
+    text-align: center;
+    padding: 180px 12px;
+    max-width: 1300px;
+    margin: auto;
+    
+}
+
+.stitulo{
+    text-shadow: rgba(22, 19, 19, 0.76) 0.1em  0.1em 0.2em;
+}
+#Tips{
+    background-color: #05041f  ;
+    color: white;
+
+}
+
+#Tips .contenedor3{
+    text-align: center;
+    padding: 160px 0px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.contenedor3 h2{
+    font-weight: bold;
+    color:  #843dbe;
+    margin-top: 0px;
+    font-size: 2.8em;
+}
+
+
+.carta1{
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.568),rgba(0,0,0,0.5)), url(../img/carta1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+    padding: 27px 0px;
+    border-radius: 15px;
+    
+}
+
+.carta2{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.637),rgba(0,0,0,0.6)),url(../img/carta3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+    padding: 25px 0px;
+    border-radius: 15px;
+}
+
+.carta3{
+ background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/carta2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover ;
+     background-position: center center;
+    padding: 25px 0px;
+    border-radius: 15px;
+}
+
+#acerca{
+    display: flex;
+    padding: 200px 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    flex-direction: column; 
+    color:white;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+}
+.contexto{
+    font-size: 1.02em;
+}
+
+.contenedor5{
+    text-align: center;
+    padding: 180px 12px;
+    max-width: 1300px;
+    margin: auto;
+    padding: 200px 0px;
+    background-color: #1d0549  ;
+    color: white;
+    
+}
+.contenedor5 .stitulo{
+    color:#9d0c90  ;
+}
+
+.contenedor6{
+    text-align: center;
+    color: white;
+    text-shadow: rgb(22, 19, 19) 0.1em  0.1em 0.2em;
+   padding: 35px 0px;
+    
+    margin: auto;
+    background-color:  #000000 ;
+}
+
+.contacw{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.384) ;
+}
+.contacw > *{
+    padding: 2em;
+}
+
+.contfor{
+    background: #000000;
+}
+
+.contacinfo{
+    background: #000000;
+}
+.contacinfo h2{
+    font-size: 2.3em;
+}
+.contacinfo li{
+    margin-top: 2%;
+    font-size: 1em;
+}
+.contfor form{
+    margin:0;
+    padding: 1em;
+}
+.contfor form button,
+.contfor form input,
+.contfor form textarea{
+    margin: 0;
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    color: #ffff;
+    border-bottom: 1px solid #036c74;
+
+}
+.contfor form button{
+    background: #036c74;
+    font-size: 0.9em;
+}
+
+
+.negrita{
+    font-weight: bold;
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    align-items: center;
+    color: white;
+    text-shadow: rgb(22, 19, 19) 0.1em  0.1em 0.2em;
+    background-color:  #000000 ; 
+}
+ 
+@media(min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction:row ;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+
+    .contenedor2{
+        justify-content: center;
+        width: 50%;
+        max-width: 600px;
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+    }
+
+    .contenedor3{
+        justify-content: center;
+        width: 80%;
+        max-width: 600px;
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+    }
+
+.contenedor4{ 
+    justify-content: center;
+        width: 50%;
+        max-width: 600px;
+       text-align: center;
+       display: flex;
+       flex-direction: column;   
+}
+.contenedor5 .stitulo{
+    justify-content: center;
+ 
+   text-align: center;
+   display: flex;
+   flex-direction: column;   
+}
+.contenedor5 .contexto{
+    justify-content: center;
+  padding: 0px 250px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;   
+}
+.contenedor6{
+    justify-content: center;
+    padding: 50% 20%;
+    margin-top: 20px;
+}
+
+}
+.stitulo{
+font-size: 3em;
+}
+.btitulo{
+    font-size: 2em;
+
+}
+.contexto{
+font-size:1.5em ;
+margin-top: 10%;
+}
+.contextoo{
+font-size: 1.5em;
+}
+    
+    #quienesomos .imgc{
+        background-image: linear-gradient( 0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/fondo2.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 50%;
+     
+    }
+
+
+@media(max-width: 790px){
+    .navlogo{
+        font-size: 2.2em;
+    }
+    .titulo{
+        font-size: 2em;
+    }
+
+
+    .checkbtn{
+        display: block;
+        opacity: 1;
+    }
+
+    .navmenu{
+    position: absolute;
+    top:  90px;
+    bottom:0;
+    background: #036c74;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out ;
+    z-index: 10;
+}
+
+#checkmenu:checked ~ .navmenu{
+    
+    clip-path: circle(100% at center);
+}
+}
+
+
